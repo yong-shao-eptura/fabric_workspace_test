@@ -1,0 +1,38 @@
+[
+  {
+    "name": "qa-platform-app-asset",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "c1aa451a-c5d0-4166-9e35-d80f2c595b0e",
+        "location": "https://qaplatformapp.dfs.core.windows.net",
+        "subpath": "/captured-udm-data/qa-platform-app-asset"
+      }
+    }
+  },
+  {
+    "name": "pdi_config",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "0bd5ff37-c5dd-4e6e-a0c3-8f1bf5721cbb",
+        "location": "https://udmdemostorageaccount.dfs.core.windows.net",
+        "subpath": "/yong-pdi-config"
+      }
+    }
+  },
+  {
+    "name": "captured-udm-data",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "a0b6d079-99c9-475d-903d-f65de5edeadd",
+        "location": "https://devplatformapp.dfs.core.windows.net",
+        "subpath": "/captured-udm-data"
+      }
+    }
+  }
+]

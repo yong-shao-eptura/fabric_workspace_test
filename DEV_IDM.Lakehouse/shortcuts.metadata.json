@@ -1,0 +1,14 @@
+[
+  {
+    "name": "pdi_config_shortcut",
+    "path": "/Files",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "0bd5ff37-c5dd-4e6e-a0c3-8f1bf5721cbb",
+        "location": "https://udmdemostorageaccount.dfs.core.windows.net",
+        "subpath": "/yong-pdi-config"
+      }
+    }
+  }
+]
