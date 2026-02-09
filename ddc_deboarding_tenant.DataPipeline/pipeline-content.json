@@ -1,0 +1,73 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "type": "TridentNotebook",
+        "typeProperties": {
+          "notebookId": "fdbf2bee-2d64-9408-4b93-389fca8d0cff",
+          "workspaceId": "00000000-0000-0000-0000-000000000000",
+          "parameters": {
+            "TENANT_NAME": {
+              "value": {
+                "value": "@pipeline().parameters.TENANT_NAME",
+                "type": "Expression"
+              },
+              "type": "string"
+            },
+            "TENANT_ID": {
+              "value": {
+                "value": "@pipeline().parameters.TENANT_ID",
+                "type": "Expression"
+              },
+              "type": "string"
+            },
+            "PDI_SHORTCUT": {
+              "value": {
+                "value": "@pipeline().parameters.PDI_SHORTCUT",
+                "type": "Expression"
+              },
+              "type": "string"
+            },
+            "KeyVaultName": {
+              "value": {
+                "value": "@pipeline().parameters.PDI_KV_NAME",
+                "type": "Expression"
+              },
+              "type": "string"
+            },
+            "PipelineRunID": {
+              "value": {
+                "value": "@pipeline().RunId",
+                "type": "Expression"
+              },
+              "type": "string"
+            }
+          }
+        },
+        "policy": {
+          "timeout": "0.12:00:00",
+          "retry": 0,
+          "retryIntervalInSeconds": 30,
+          "secureInput": false,
+          "secureOutput": false
+        },
+        "name": "Notebook1",
+        "dependsOn": []
+      }
+    ],
+    "parameters": {
+      "TENANT_NAME": {
+        "type": "String"
+      },
+      "TENANT_ID": {
+        "type": "String"
+      },
+      "PDI_SHORTCUT": {
+        "type": "String"
+      },
+      "PDI_KV_NAME": {
+        "type": "String"
+      }
+    }
+  }
+}

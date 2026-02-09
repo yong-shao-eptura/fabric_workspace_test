@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "ddc_deboarding_tenant"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "06d2f9cd-9f48-be25-49b0-30ffa1f5a034"
+  }
+}
